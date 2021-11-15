@@ -1,1 +1,0 @@
-# courseReact-NextJs_project-1
