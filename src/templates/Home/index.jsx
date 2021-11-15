@@ -70,9 +70,10 @@ export class Home extends Component {
         </div>
 
         {/** PostsListing **/}
-        {filteredPosts.length ? (
+        {filteredPosts.length > 0 (
           <Posts posts={filteredPosts} />
-        ) : (
+        )}
+        {filteredPosts.length <= 0 (
           <p>Nada encontrado :(</p>
         )}
 
