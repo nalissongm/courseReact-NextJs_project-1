@@ -1,0 +1,26 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: #eee;
+  padding: 30px;
+}
+
+.bntt-container{
+  min-height: 100px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.search-container{
+  margin-bottom: 30px;
+}
+
+.search-container h1{
+  margin-bottom: 20px;
+}
+
+.search-container h1 span{
+  color: rgba(75, 74, 74, 0.555);
+  font-weight: 400;
+}

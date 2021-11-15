@@ -1,0 +1,26 @@
+.bttn{
+    width: 100%;
+    border: 2px solid rgba(0, 0, 139, 0.719);
+    color: rgba(0, 0, 139, 0.719);
+    padding: 15px 30px;
+    cursor: pointer;
+    font-weight: bolder;    
+    font-size: 18px;
+    border-radius: 5px;
+    transition: all ease 200ms;
+}
+
+.bttn:hover{
+    border: none;
+    color: whitesmoke;
+    background: rgba(0, 0, 139, 0.932);
+    padding: 17px 32px;
+}
+
+.bttn:disabled{
+    border: 2px solid rgba(147, 147, 150, 0.664);
+    color: rgba(147, 147, 150, 0.753);
+    background: transparent;
+    padding: 15px 30px !important;
+    cursor: not-allowed;
+}
