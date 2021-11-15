@@ -60,7 +60,9 @@ export class Home extends Component {
       <section className="container">
         <div className="search-container">
           {!!searchValue && (
-              <h1>Search Value: <span>{searchValue}</span></h1>
+            <h1>
+              Search Value: <span>{searchValue}</span>
+            </h1>
           )}
 
           <TextInput
@@ -70,12 +72,8 @@ export class Home extends Component {
         </div>
 
         {/** PostsListing **/}
-        {filteredPosts.length > 0 (
-          <Posts posts={filteredPosts} />
-        )}
-        {filteredPosts.length <= 0 (
-          <p>Nada encontrado :(</p>
-        )}
+        {filteredPosts.length > 0 && <Posts posts={filteredPosts} />}
+        {filteredPosts.length <= 0 && <p>Nada encontrado :(</p>}
 
         <div className="bntt-container">
           {!searchValue && (
