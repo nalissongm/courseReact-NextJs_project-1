@@ -64,7 +64,7 @@ export const Home = () => {
 
       {/** PostsListing **/}
       {filteredPosts.length > 0 && <Posts posts={filteredPosts} />}
-      {filteredPosts.length <= 0 && <p>{!!searchValue && `Nada encontrado :(<`}</p>}
+      {filteredPosts.length === 0 && <p>Nada encontrado :(</p>}
 
       <div className="bntt-container">
         {!searchValue && <Button disabled={noMorePosts} text="Next Page" bttnClicked={lodeMorePosts} />}
